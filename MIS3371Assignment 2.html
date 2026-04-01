@@ -44,8 +44,8 @@ Purpose: Learning html
           <td align="center"> 
            <tr>  
                <td align="right">
-                    <label for="Firstname"> First Name</label></td>
-                <td>   <input type="text" id="Firstname" size="12" maxlength="30" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
+                    <label for="fname"> First Name</label></td>
+                <td>   <input pattern="[A-Z^a-z-' ^~]{2,}" type="text" id="fname" size="12" maxlength="30" required oninvalid="alert('Please add a First Name'); placeholder="required field"> </td></tr>
                               <tr>  
                                   <td align="right">
    <label for="MiddleInitial">Middle Initial</label></td>
@@ -159,9 +159,9 @@ Purpose: Learning html
             <span id="rangedisplay">Medium</span>
         </td>
     </tr>
-                    <tr> <td align="right"> <label for="Username"> Username</label></td>
+                    <tr> <td align="right"> <label for="uname"> Username</label></td>
               <td>
-                        <input type="text" id="Username" size="12" maxlength="20" > </td></tr>
+                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
                      
              <tr>    <td align="right"> <label for="Password">Password</label> </td>
                      <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
