@@ -59,7 +59,7 @@ Purpose: Learning html
                       <td>  <input type="text" id="LastName" size="12" maxlength="30" pattern="[A-Z^a-z34-' ]{2,}" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
                             <tr>  <td align="right">
     <label for="DateofBirth">Date of Birth</label></td>
-                      <td>  <input type="date" id="DateofBirth" size="12" requiredoninput"this.setCustomValidity('')" placeholder="MM/DD/YYYY"> </td></tr>
+                      <td>  <input type="date" id="DateofBirth" size="12" min="2009-01-01" max="today"placeholder="MM/DD/YYYY"> </td></tr>
                             <tr>  <td align="right">
     <label for="gender">Gender</label></td> 
                 
@@ -78,6 +78,36 @@ Purpose: Learning html
   <label for="SSN">Social Security Number</label></td>
                       <td>  <input type="password" id="SSN" size="12" maxlength="30" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
+                                      <tr>  <td align="right">
+          <label for="EmailAddress">Email Address</label></td>
+                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,32}$" size="12" maxlength="30" > </td></tr>
+              
+                     <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
+                        <td><input type="tel" id="PhoneNum" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="12" maxlength="10" > </td></tr>
+              
+                 <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
+                      <td>  <textarea name="desc" id="Symptoms"></textarea> </td> </tr>
+              <tr >
+        <td align="right">
+            <label for="PainScale">Pain Scale</label>
+        </td>
+        <td align="center">&nbsp;Minimal
+            <input type="range" class="slider" id="Pscale" name="PainScale" step="100" min="200" max="2000"> 
+            Severe&nbsp;<br>
+            <span id="rangedisplay">Medium</span>
+        </td>
+    </tr>
+                    <tr> <td align="right"> <label for="uname"> Username</label></td>
+              <td>
+                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
+                     
+             <tr>    <td align="right"> <label for="Password">Password</label> </td>
+                     <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
+              
+                       <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
+                       <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
+             <tr> 
+                 <td colspan="3">
  <label for="AddressLine">Address Line</label></td>
                       <td>  <input type="text" id="AddressLine" size="12" maxlength="50" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
@@ -144,36 +174,6 @@ Purpose: Learning html
                   <option value="WY">Wyoming</option>
                 </select> </td></tr>
 
-                <tr>  <td align="right">
-          <label for="EmailAddress">Email Address</label></td>
-                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="12" maxlength="30" > </td></tr>
-              
-                     <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
-                        <td><input type="tel" id="PhoneNum" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="12" maxlength="10" > </td></tr>
-              
-                 <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
-                      <td>  <textarea name="desc" id="Symptoms"></textarea> </td> </tr>
-              <tr >
-        <td align="right">
-            <label for="PainScale">Pain Scale</label>
-        </td>
-        <td align="center">&nbsp;Minimal
-            <input type="range" class="slider" id="Pscale" name="PainScale" step="100" min="200" max="2000"> 
-            Severe&nbsp;<br>
-            <span id="rangedisplay">Medium</span>
-        </td>
-    </tr>
-                    <tr> <td align="right"> <label for="uname"> Username</label></td>
-              <td>
-                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
-                     
-             <tr>    <td align="right"> <label for="Password">Password</label> </td>
-                     <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
-              
-                       <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
-                       <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
-             <tr> 
-                 <td colspan="3">
             <center>
                 <input type="submit" value="Submit" >
                <input type="button" value="Review" onclick="returndata()"> 
@@ -183,11 +183,10 @@ Purpose: Learning html
                     <!-- credit you professor -->
     document.getElementById("Today").innerHTML = new Date().toLocaleDateString();
 </script>
-                            
+           <script src="Assignment2.js"></script>                   
                         </table>
                     </form>
                         </div>
                         </tbody>
-        <script src="Assignment2.js"></script>
                         </body>
     </html>
