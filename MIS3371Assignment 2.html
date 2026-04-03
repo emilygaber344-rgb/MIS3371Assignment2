@@ -97,17 +97,7 @@ Purpose: Learning html
             <span id="rangedisplay">Medium</span>
         </td>
     </tr>
-                    <tr> <td align="right"> <label for="uname"> Username</label></td>
-              <td>
-                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
-                     
-             <tr>    <td align="right"> <label for="Password">Password</label> </td>
-                     <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
-              
-                       <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
-                       <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
-             <tr> 
-                 <td colspan="3">
+                  
  <label for="AddressLine">Address Line</label></td>
                       <td>  <input type="text" id="AddressLine" size="12" maxlength="50" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
@@ -173,7 +163,17 @@ Purpose: Learning html
                   <option value="WI">Wisconsin</option>
                   <option value="WY">Wyoming</option>
                 </select> </td></tr>
-
+  <tr> <td align="right"> <label for="uname"> Username</label></td>
+              <td>
+                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
+                     
+             <tr>    <td align="right"> <label for="Password">Password</label> </td>
+                     <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
+              
+                       <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
+                       <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
+             <tr> 
+                 <td colspan="3">
             <center>
                 <input type="submit" value="Submit" >
                <input type="button" value="Review" onclick="returndata()"> 
