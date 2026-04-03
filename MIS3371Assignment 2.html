@@ -45,7 +45,7 @@ Purpose: Learning html
            <tr>  
                <td align="right">
                     <label for="fname"> First Name</label></td>
-                <td>   <input pattern="[A-Z^a-z-' ^~]{2,}" type="text" id="fname" size="12" maxlength="30" required oninvalid="alert('Please add a First Name'); placeholder="required field"> </td></tr>
+                <td>   <input pattern="[A-Z^a-z-' ^~]{1,32}" type="text" id="fname" size="12" maxlength="30" required oninvalid="alert('Please add a First Name'); placeholder="required field"> </td></tr>
                               <tr>  
                                   <td align="right">
    <label for="MiddleInitial">Middle Initial</label></td>
@@ -54,7 +54,7 @@ Purpose: Learning html
               <tr>  
                   <td align="right">
     <label for="LastName">Last Name</label></td>
-                      <td>  <input type="text" id="LastName" size="12" maxlength="30" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
+                      <td>  <input type="text" id="LastName" size="12" maxlength="30" pattern="[A-Z^a-z34-' ]{2,}" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
                             <tr>  <td align="right">
     <label for="DateofBirth">Date of Birth</label></td>
                       <td>  <input type="date" id="DateofBirth" size="12" requiredoninput"this.setCustomValidity('')" placeholder="MM/DD/YYYY"> </td></tr>
@@ -144,7 +144,7 @@ Purpose: Learning html
 
                 <tr>  <td align="right">
           <label for="EmailAddress">Email Address</label></td>
-                     <td>  <input type="text" id="EmailAddress" size="12" maxlength="30" > </td></tr>
+                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"> size="12" maxlength="30" > </td></tr>
                      <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
                         <td><input type="text" id="PhoneNum" size="12" maxlength="10" > </td></tr>
                  <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
