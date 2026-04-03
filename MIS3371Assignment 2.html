@@ -21,6 +21,7 @@ Purpose: Learning html
       <h1 style="color:LightGray;">Dawhat Clinic</h1>
           <link rel="stylesheet" href="Assignment2Css.css">
         <h2 style="color:LightGray;">Intake Form</h2>
+          
         </div>
    <!--starting to make the information entry portion of the body -->
      
@@ -31,6 +32,7 @@ Purpose: Learning html
   border: 1px solid black;
   padding: 70px;
   margin: 50px;
+            font-stretch: expanded
             }
          </style>
     
@@ -144,9 +146,11 @@ Purpose: Learning html
 
                 <tr>  <td align="right">
           <label for="EmailAddress">Email Address</label></td>
-                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"> size="12" maxlength="30" > </td></tr>
+                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="12" maxlength="30" > </td></tr>
+              
                      <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
-                        <td><input type="text" id="PhoneNum" size="12" maxlength="10" > </td></tr>
+                        <td><input type="tel" id="PhoneNum" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" size="12" maxlength="10" > </td></tr>
+              
                  <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
                       <td>  <textarea name="desc" id="Symptoms"></textarea> </td> </tr>
               <tr >
@@ -154,7 +158,7 @@ Purpose: Learning html
             <label for="PainScale">Pain Scale</label>
         </td>
         <td align="center">&nbsp;Minimal
-            <input type="range" class="slider" id="budget" name="budget" step="100" min="200" max="2000"> 
+            <input type="range" class="slider" id="Pscale" name="PainScale" step="100" min="200" max="2000"> 
             Severe&nbsp;<br>
             <span id="rangedisplay">Medium</span>
         </td>
@@ -165,12 +169,13 @@ Purpose: Learning html
                      
              <tr>    <td align="right"> <label for="Password">Password</label> </td>
                      <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
+              
                        <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
                        <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
              <tr> 
                  <td colspan="3">
             <center>
-                <input type="submit">
+                <input type="submit" value="Submit" >
                <input type="button" value="Review" onclick="returndata()"> 
               <input type="reset">
                 </center></td></tr>
