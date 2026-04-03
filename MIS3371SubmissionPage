@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Subbmited page</title>
+</head>
+    <body>
+    "Your information has been submitted"
+            </p><form action="MIS3371Assignment 2.html">
+              <input type="submit" value="Go back">
+            </form></center>
+</body>
+</html>
