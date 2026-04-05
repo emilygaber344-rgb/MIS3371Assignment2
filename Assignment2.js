@@ -15,7 +15,7 @@ function validateFName() {
 function clear() {
   document.getElementById("Intake").reset();
 }
-    <script>
+ /*   <script>
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -73,7 +73,7 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-    
+    */
    // credit to geeksforgeeks and you professor
     
         const d = new Date();
