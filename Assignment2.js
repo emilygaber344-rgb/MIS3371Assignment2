@@ -7,10 +7,7 @@ Purpose: Learning html
 */
 
 function validateFName() {
-  let x = document.forms["form"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
+  alert("Please add a valid First Name.");
 //credit w3schools tyty
 function clear() {
   document.getElementById("Intake").reset();
