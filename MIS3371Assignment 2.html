@@ -28,6 +28,7 @@ Purpose: Learning html
      
         <style>
         div{
+           
              background-color: #005FC4;
   width: 700px;
   border: 1px solid black;
@@ -48,7 +49,7 @@ Purpose: Learning html
            <tr>  
                <td align="right">
                     <label for="fname"> First Name</label></td>
-                <td>   <input pattern="[A-Z^a-z-' ^~]{1,32}" type="text" id="fname" size="12" maxlength="30" required oninvalid="alert('Please add a First Name'); placeholder="required field"> </td></tr>
+                <td>   <input pattern="[A-Z^a-z-' ^~]{1,32}" type="text" id="fname" size="12" maxlength="30" required oninvalid="validateFName()" placeholder="required field"> </td></tr>
                               <tr>  
                                   <td align="right">
    <label for="MiddleInitial">Middle Initial</label></td>
@@ -84,7 +85,7 @@ Purpose: Learning html
                      <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,32}$" size="12" maxlength="30" > </td></tr>
               
                      <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
-                        <td><input type="text" id="PhoneNum" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" size="12" maxlength="13" > </td></tr>
+                        <td><input type="text" id="PhoneNum" pattern="[0-9]-{3}[0-9]-{3}[0-9]{4}" size="12" maxlength="13" > </td></tr>
               
                  <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
                       <td>  <textarea name="desc" id="Symptoms"></textarea> </td> </tr>
@@ -166,13 +167,13 @@ Purpose: Learning html
                 </select> </td></tr>
   <tr> <td align="right"> <label for="uname"> Username</label></td>
               <td>
-                        <input type="text" id="uname" size="12" maxlength="20" > </td></tr>
+                        <input type="text" id="uname" size="12" min="5" maxlength="30" > </td></tr>
                      
              <tr>    <td align="right"> <label for="Password">Password</label> </td>
-                     <td>   <input type="password" id="Password" size="12" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
+                     <td>   <input type="password" id="Password" size="12" min="8"  maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
               
                        <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
-                       <td> <input type="password" id="RePassword" size="12" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
+                       <td> <input type="password" id="RePassword" size="12" min="8" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
              <tr> 
                  <td colspan="3">
             <center>
