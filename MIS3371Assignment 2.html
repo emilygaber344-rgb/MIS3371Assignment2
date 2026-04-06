@@ -58,10 +58,10 @@ Purpose: Learning html
               <tr>  
                   <td align="right">
     <label for="LastName">Last Name</label></td>
-                      <td>  <input type="text" id="LastName" size="12" maxlength="30" pattern="[A-Z^a-z34-' ]{2,}" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
+                      <td>  <input type="text" id="LastName" size="30" maxlength="30" pattern="[A-Z^a-z34-' ]{2,}" required oninput="" placeholder="required field"> </td></tr>
                             <tr>  <td align="right">
     <label for="DateofBirth">Date of Birth</label></td>
-                      <td>  <input type="date" id="DateofBirth" size="12" min="2009-01-01" max="today"placeholder="MM/DD/YYYY"> </td></tr>
+                      <td>  <input type="date" id="DateofBirth" size="12" min="2009-01-01" max="today" required placeholder="MM/DD/YYYY"> </td></tr>
                             <tr>  <td align="right">
     <label for="gender">Gender</label></td> 
                 
@@ -78,17 +78,17 @@ Purpose: Learning html
                             
                                <tr>  <td align="right">
   <label for="SSN">Social Security Number</label></td>
-                      <td>  <input type="password" id="SSN" size="12" maxlength="30" requiredoninput"this.setCustomValidity('')" placeholder="required field"> </td></tr>
+                      <td>  <input type="password" id="SSN" size="30" maxlength="30" required oninput="" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
                                       <tr>  <td align="right">
           <label for="EmailAddress">Email Address</label></td>
-                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,32}$" size="12" maxlength="30" > </td></tr>
+                     <td>  <input type="email" id="EmailAddress"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,32}$" size="30" maxlength="30" > </td></tr>
               
                      <tr>      <td align="right"><label for="PhoneNum">Phone Number</label></td>
-                        <td><input type="text" id="PhoneNum" pattern="[0-9]-{3}[0-9]-{3}[0-9]{4}" size="12" maxlength="13" > </td></tr>
+                        <td><input type="text" id="PhoneNum" pattern="[0-9]-{3}[0-9]-{3}[0-9]{4}" size="20" maxlength="13" > </td></tr>
               
                  <tr> <td align="right"> <label for="Symptoms">Describe Your Symptoms</label> </td>
-                      <td>  <textarea name="desc" id="Symptoms"></textarea> </td> </tr>
+                      <td>  <textarea name="desc" size="30" id="Symptoms"></textarea> </td> </tr>
               <tr >
         <td align="right">
             <label for="PainScale">Pain Scale</label>
@@ -101,13 +101,13 @@ Purpose: Learning html
     </tr>
                   
  <tr>  <td align="right"><label for="AddressLine">Address Line</label></td>
-                      <td>  <input type="text" id="AddressLine" size="12" maxlength="50" requiredoninput"" placeholder="required field"> </td></tr>
+                      <td>  <input type="text" id="AddressLine" size="30" maxlength="50" required oninput="" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
 <tr>  <td align="right"> <label for="City">City</label></td>
-                      <td>  <input type="text" id="City" size="12" maxlength="30" requiredoninput"" placeholder="required field"> </td></tr>
+                      <td>  <input type="text" id="City" size="30" maxlength="30" required oninput="" placeholder="required field"> </td></tr>
                                <tr>  <td align="right">
  <tr>  <td align="right"> <label for="Zcode">Zip Code</label></td>
-                       <td> <input type="text" id="ZCode" size="8" maxlength="9" requiredoninput")" placeholder="required field"> </td> </tr>
+                       <td> <input type="text" id="ZCode" size="8" maxlength="9" required oninput="" placeholder="required field"> </td> </tr>
             
            <tr>  <td align="right">  <label for="State">State</label></td>
 <!--credit to pusherman on github https://gist.github.com/pusherman/3145761-->
@@ -167,13 +167,13 @@ Purpose: Learning html
                 </select> </td></tr>
   <tr> <td align="right"> <label for="uname"> Username</label></td>
               <td>
-                        <input type="text" id="uname" size="12" min="5" maxlength="30" > </td></tr>
+                        <input type="text" id="uname" required size="30" min="5" maxlength="30" > </td></tr>
                      
              <tr>    <td align="right"> <label for="Password">Password</label> </td>
-                     <td>   <input type="password" id="Password" size="12" min="8"  maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
+                     <td>   <input type="password" id="Password" size="30" min="8"  maxlength="30" required placeholder="required field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> </td></tr>
               
                        <tr>  <td align="right"> <label for="RePassword">Retype your Password</label></td>
-                       <td> <input type="password" id="RePassword" size="12" min="8" maxlength="30"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > </td></tr>
+                       <td> <input type="password" id="RePassword" size="30" min="8" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="required field"> </td></tr>
              <tr> 
                  <td colspan="3">
             <center>
