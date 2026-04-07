@@ -9,7 +9,7 @@ Purpose: Learning html
 <html> 
     <head>  
     <meta charset="utf-8">
-        <title> "Dawhat Clinic Intake Form" </title>
+        <title> Dawhat Clinic Intake Form </title>
     </head>
     <body style="background-color:#000047;">
      <tbody>
@@ -61,8 +61,9 @@ Purpose: Learning html
     <label for="LastName">Last Name</label></td>
                       <td>  <input type="text" id="LastName" size="30" maxlength="30" pattern="[A-Z^a-z34-' ]{2,}" required oninput="" placeholder="required field"> </td></tr>
                             <tr>  <td align="right">
-    <label for="DateofBirth">Date of Birth</label></td>
-                      <td>  <input type="date" id="DateofBirth" size="12" min="1909-01-01" max="Today" required placeholder="MM/DD/YYYY"> </td></tr>
+                                
+    <label for="birthday">Date of Birth</label></td>
+                      <td>  <input type="date" id="birthday" size="12" min="1909-01-01" max="" required placeholder="MM/DD/YYYY"> </td></tr>
                             <tr>  <td align="right">
     <label for="gender">Gender</label></td> 
                 
@@ -184,8 +185,11 @@ Purpose: Learning html
               <input type="reset" onclick="clear()">
                 </center></td></tr>
                 <script>
-                    <!-- credit you professor -->
+                    <!-- credit you professor and to Pankaj Panjwani -->
     document.getElementById("Today").innerHTML = new Date().toLocaleDateString();
+                     var today = new Date().toISOString().split('T')[0];
+	  document.getElementById('birthday').setAttribute('max', Today); 
+	  
 </script>
            <script src="Assignment2.js"></script>                   
                         </table>
